@@ -4,7 +4,7 @@ Below is a list of all markdown files in this repository, contents generated and
 
 ## 0 Research
 
-- [0_1_terraform.md](https://github.com/raiyans/tech264-cloud/blob/main/0_research/0_1_terraform.md)
+- [0_1_terraform_overview.md](https://github.com/raiyans/tech264-cloud/blob/main/0_research/0_1_terraform_overview.md)
 
 
 ## 1 Practical
