@@ -20,7 +20,7 @@ import os
 import re
 
 # Base URL for the GitHub repository
-base_url = "https://github.com/raiyans/tech264-cloud/blob/main/"
+base_url = "https://github.com/raiyans/tech264-terraform-docs/blob/main/"
 
 # List of directories to include in the table of contents
 directories = [

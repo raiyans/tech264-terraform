@@ -48,7 +48,7 @@
 ### 6. What is Provisioning of Infrastructure?
 
 Provisioning refers to the process of setting up and configuring infrastructure resources such as servers, databases, and networks.
-
+- **Tools to do it?**: Terraform, AWS cloud formation.
 - **Do CM Tools Do It?**: Yes, tools like Ansible, Puppet, and Chef can provision infrastructure by automating server setups, networking, and application deployments.
 
 ### 7. What is Ansible and How Does it Work?
@@ -63,3 +63,5 @@ Provisioning refers to the process of setting up and configuring infrastructure 
 - **Enterprise**: Financial institutions and healthcare providers use IaC to maintain regulatory compliance and automate operations.
 
 ---
+
+![images](/images/iac-overview.jpg)
