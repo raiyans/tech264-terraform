@@ -1,18 +1,29 @@
 # Steps for Ansible Architecture
 
+- [Steps for Ansible Architecture](#steps-for-ansible-architecture)
+  - [1. Create Two Instances on AWS](#1-create-two-instances-on-aws)
+    - [Diagraam](#diagraam)
+    - [Ansible Controller Instance:](#ansible-controller-instance)
+    - [Ansible Target Node Instance (will run the app):](#ansible-target-node-instance-will-run-the-app)
+  - [2. Connect to Instances](#2-connect-to-instances)
+  - [3. Set Up Ansible on the Controller Instance](#3-set-up-ansible-on-the-controller-instance)
+  - [4. Configure Ansible Hosts](#4-configure-ansible-hosts)
+  - [5. Create and Run an Ansible Playbook to Install NGINX](#5-create-and-run-an-ansible-playbook-to-install-nginx)
+
+
 ## 1. Create Two Instances on AWS
 ### Diagraam
 
 
 ### Ansible Controller Instance:
-- **Name**: `tech2xx-priyan-ubuntu-2204-ansible-controller`
+- **Name**: `tech2xx-raiyan-ubuntu-2204-ansible-controller`
 - **Security Group**: Allow SSH port
 - **Key Pair**: Use the key pair you typically use for AWS instances
 - **Image**: Ubuntu Server 22.04 LTS (free tier eligible)
 - **Additional Setup**: Leave user data and scripts blank; do not run any.
 
 ### Ansible Target Node Instance (will run the app):
-- **Name**: `tech2xx-priyan-ubuntu-2204-ansible-target-node-app`
+- **Name**: `tech2xx-raiyan-ubuntu-2204-ansible-target-node-app`
 - **Security Group**: Allow SSH, HTTP, and port 3000 (typical for app)
 - **Key Pair**: Use the same key pair as for the controller instance
 - **Image**: Ubuntu Server 22.04 LTS (free tier eligible)
@@ -50,7 +61,7 @@ Place the AWS private key in the `.ssh` folder on the **Controller VM**.
 
 1. Use the ping module to verify that the Ansible controller can communicate with a device specified in the hosts file.
 
-   ![Ping Module Check](images/image-1.png)
+   !
 
 2. Open the `hosts` file in the `/etc/ansible/` directory with nano and add the **Target Node**'s public IP address.
 
@@ -67,7 +78,7 @@ Place the AWS private key in the `.ssh` folder on the **Controller VM**.
    - Use `all` to target every device in the `hosts` file, or specify a particular server or group.
    - Group your servers (e.g., `db` and `app`) with a parent `[test:children]` section in the hosts file.
 
-   ![Hosts File Example](images/image-2.png)
+   !
 
 ---
 
