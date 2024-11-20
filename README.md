@@ -13,4 +13,5 @@ Below is a list of all markdown files in this repository, contents generated and
 
 - [0_0_install_terraform.md](https://github.com/raiyans/tech264-terraform-docs/blob/main/1_practical/0_0_install_terraform.md)
 - [0_1_terraform_basic_cmds.md](https://github.com/raiyans/tech264-terraform-docs/blob/main/1_practical/0_1_terraform_basic_cmds.md)
+- [1_0_ansible.md](https://github.com/raiyans/tech264-terraform-docs/blob/main/1_practical/1_0_ansible.md)
 
